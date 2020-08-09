@@ -1,5 +1,6 @@
 package com.example.demo;
 import  org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
@@ -14,13 +15,13 @@ public class HelloController {
         return "<h1>hello login</h1>";
     }
 
-    @GetMapping("/index")
+    @RequestMapping("index")
     public String index(){
-        return "index page";
+        return "/index/index.html";
     }
 
     @GetMapping("/health")
     public String health(){
-        return "health page";
+        return "hello, health page";
     }
 }
