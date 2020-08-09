@@ -13,4 +13,14 @@ public class HelloController {
     public String login(){
         return "<h1>hello login</h1>";
     }
+
+    @GetMapping("/index")
+    public String index(){
+        return "index page";
+    }
+
+    @GetMapping("/health")
+    public String health(){
+        return "health page";
+    }
 }
