@@ -24,4 +24,12 @@ public class HelloController {
     public String health(){
         return "hello, health page";
     }
+
+    @GetMapping("/people")
+    public String people(){
+        return "hello, people page";
+    }
+
+
+
 }
