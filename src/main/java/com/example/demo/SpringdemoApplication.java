@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringdemoApplication {
 
 	public static void main(String[] args) {
+		System.out.println("rao start sping-boot");
 		SpringApplication.run(SpringdemoApplication.class, args);
 	}
-
 }
